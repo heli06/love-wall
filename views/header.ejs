@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title><%= title %> - 表白墙</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap-responsive.css">
+    <link rel="stylesheet" id="style" href="/stylesheets/style.css">
+    <link rel="stylesheet" id="login" href="/stylesheets/login.css">
+    <link rel="stylesheet" id="nav" href="/stylesheets/nav.css">
+    <!--以下两行分别为中英文在线字体-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+    <script type="text/javascript"
+            src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+
+</head>
+<!--中文在线字体匹配-->
+<script type="text/javascript">
+    /*$youziku.load("body", "9c6f0eb8b74642dbb7b3ddb01daa1e37", "LiDeBiao-Xing3");*/
+    $youziku.load(".post", "9c6f0eb8b74642dbb7b3ddb01daa1e37", "LiDeBiao-Xing3");
+    /*．．．*/
+    $youziku.draw();
+</script>
+<body>
+
+<div class="navbar navbar-fixed-top specialbg">
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </a>
+    <div class="nav-collapse">
+        <ul class="nav fancyNav">
+            <li><a href="/">Love-Wall-Home</a></li>
+            <% if (!locals.user) { %>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/reg">Register</a></li>
+            <% } else { %>
+            <li><a href="/u/<%= user.name %>/manage">Manage</a></li>
+            <li><a href="/logout">Exit</a></li>
+            <% } %>
+            <li id="style-change"><a href="">Style-Change</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="container" class="container">
+    <% if (locals.success) { %>
+    <div class="alert alert-success">
+        <%= locals.success %>
+    </div>
+    <% } %>
+    <% if (locals.error) { %>
+    <div class="alert alert-error">
+        <%= locals.error %>
+    </div>
+<% } %>

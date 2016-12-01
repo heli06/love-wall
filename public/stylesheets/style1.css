@@ -1,0 +1,162 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font: 16px "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color: rgb(51,51,51);
+    /*background-image: url("../images/background/8.jpg");*/
+    background-color:#fefee1;
+    background-repeat: repeat;
+}
+
+.login-form,.login-form>form>input{
+    font: 20px/1  "Lucida Grande",LiDeBiao-Xing3,Lobster,Arial,sans-serif;
+}
+
+/*轮播相关*/
+#myCarousel {
+    margin-bottom: 100px;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: hotpink;
+}
+
+.carousel-inner img {
+  width:100%;
+  height: 300px;
+}
+
+.specialbg{
+    background-color: #faecf1;
+    /*background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#fce1f2), color-stop(0.51, #fcelf2));*/
+    /*background-image: -moz-linear-gradient(#fefefe 0%, #fce1f2 50%, #fefefe 100%);*/
+    /*background-image: -o-linear-gradient(#fefefe 0%, #fce1f2 50%, #fefefe 100%);*/
+    /*background-image: -ms-linear-gradient(#fefefe 0%, #fce1f2 50%, #fefefe 100%);*/
+    /*background-image: linear-gradient(#fefefe 0%, #fce1f2 50%, #fefefe 100%);*/
+}
+
+.nav-collapse{
+
+}
+
+/*表白贴相关*/
+.post{
+    width: 370px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:0 3%;
+    height: 210px ;
+    margin: 0 0.85% 20px 0.85%;
+    background-image: url("../images/letter/03.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
+    line-height: 150%;
+}
+
+/*发言框相关*/
+.say{
+    box-sizing: border-box;
+    border-radius: 10%;
+    padding:0 3%;
+    height: 250px ;
+    margin: 100px auto 0 auto;
+    background-image: url("../images/letter/03.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
+    line-height: 150%;
+    text-align: left;
+    width: 31.5%;
+}
+.say input,.say textarea{
+    font: 16px "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    background:transparent;width: 30%;
+}
+
+textarea::-webkit-input-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+　　input:-moz-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+　　input::-moz-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+　　input:-ms-input-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+　　input:-moz-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+　　input::-moz-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+　　input:-ms-input-placeholder {
+    font-family: "Lucida Grande",LiDeBiao-Xing3, Helvetica, Arial, sans-serif;
+    color:rgb(100,100,100)!important;
+}
+
+/*发言框隐藏*/
+.post-hidden {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 54, 66, 0.9);
+    z-index: 3;
+    overflow-y: auto;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*发言框显现*/
+.post-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 54, 66, 0.9);
+    z-index: 3;
+    overflow-y: auto;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*发言按钮*/
+.post-button {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-image: url("../images/pen.png");
+    background-size: cover;
+    position: fixed;
+    border: none;
+    bottom: 10%;
+    right: 10%;
+    z-index: 4;
+    box-shadow: 0 2px 5px #7e8fad;
+}

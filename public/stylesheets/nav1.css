@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*----------------------------
+	CSS3 Animated Navigation
+-----------------------------*/
+.fancyNav{
+	/* Affects the UL element */
+	overflow: hidden;
+	display: inline-block;
+	width:100%;
+}
+
+.specialbg{
+	background-color: #C99843;
+}
+
+.fancyNav li{
+	/* Specifying a fallback color and we define CSS3 gradients for the major browsers: */
+	background-color: #C99843;
+	
+	border-right: 1px solid rgba(9, 9, 9, 0.125);
+	
+	/* Adding a 1px inset highlight for a more polished efect: */
+	position:relative;
+	float: left;
+	list-style: none;
+}
+
+.fancyNav li:hover {
+	background-color: #c7a15e;
+}
+
+/* Styling the anchor elements */
+
+.fancyNav li a{
+	color:#fefee1 !important;
+	display: inline-block;
+	font: 20px/1 Lobster,Arial,sans-serif !important;
+	padding: 12px 35px 14px;
+	position: relative;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+	z-index:2;
+	text-decoration:none !important;
+	white-space:nowrap;
+}
+
+nav{
+	display: block;
+	/*margin: 300px auto 0;*/
+	text-align: center;
+	width: 100%;
+}
+
+a:hover{
+	text-decoration:underline;
+}

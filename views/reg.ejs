@@ -1,0 +1,25 @@
+<%- include header.ejs %>
+<div class="login-form">
+    <h1>Welcome Register Form</h1>
+    <form class="form-horizontal" method="post">
+        <input type="text" id="username"
+               name="username" autofocus="autofocus" pattern="^[a-zA-Z\d]+$" required
+               placeholder="用户名数字+字母~">
+
+        <input type="password" id="password" name="password"
+               pattern="(?=.*[0-9])(?=.*[a-zA-Z]).{6,16}" required
+               placeholder="密码6~16位，数字+字母~">
+
+        <input type="password" id="password-repeat" name="password-repeat"
+               pattern="(?=.*[0-9])(?=.*[a-zA-Z]).{6,16}" required
+               placeholder="请重复输入密码~">
+
+        <input type="text" id="email" name="email"
+               pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" required
+                placeholder="接收验证码的邮箱~">
+
+        <input type="submit" value="Register">
+    </form>
+
+</div>
+<%- include footer-another.ejs %>

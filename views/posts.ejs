@@ -1,0 +1,12 @@
+<div id="postPage">
+    <% posts.forEach(function(post) { %>
+        <div class="post">
+            <p class="posttext">
+                <small><%= post.time %></small>
+                <br/>
+                <%= post.post %>
+            </p>
+        </div>
+
+    <%}) %>
+</div>

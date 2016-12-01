@@ -1,0 +1,31 @@
+<%- include header.ejs %>
+
+<% if (locals.success) { %>
+<div class="alert alert-success">
+    <%= locals.success %>
+</div>
+<% } %>
+<% if (locals.error) { %>
+<div class="alert alert-error">
+    <%= locals.error %>
+</div>
+<% } %>
+
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <legend>验证码核对</legend>
+
+        <div class="control-group">
+            <label class="control-label" for="code">验证码</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="code"
+                       name="code" required>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">确定</button>
+        </div>
+    </fieldset>
+</form>
+
+<%- include footer-another.ejs %>

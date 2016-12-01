@@ -1,0 +1,10 @@
+<%- include header.ejs %>
+
+<div id="container" class="container">
+    <% if (user) { %>
+    <%- include say.ejs %>
+    <% } %>
+    <% include posts.ejs%>
+
+
+<%- include footer-another.ejs %>

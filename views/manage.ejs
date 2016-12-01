@@ -1,0 +1,26 @@
+<%- include header.ejs %>
+
+<form class="form-horizontal" method="post">
+    <legend>以往发言</legend>
+        <a href="/u/<%= user.name %>">点击这里查看</a>
+    <br/>
+
+    <fieldset>
+        <legend>关注的人</legend>
+        <ul>
+            <% friends.forEach(function ( friend ) { %>
+            <li> <a href="/u/<%= friend %>"><%= friend %></a></li>
+            <%})%>
+        </ul>
+        <div class="control-group">
+            <label class="control-label" for="friendname">填入你想关注的人的名字</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="friendname"
+                       name="friendname">
+            </div>
+        </div>
+                <button type="submit" class="btn btn-primary">添加</button>
+    </fieldset>
+
+</form>
+<%- include footer-another.ejs %>
